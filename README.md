@@ -42,12 +42,12 @@ JSON: 55 bytes
     "last_name" : "Cardoso"                            
 }
                                                   
-Same in Protocol Buffers: 20 bytes
-message Person {
-    int32 age = 1;
-    string first_name = 2;
-    string last_name = 3;
-}
+Same in Protocol Buffers: 20 bytes  
+message Person {  
+    int32 age = 1;  
+    string first_name = 2;  
+    string last_name = 3;  
+}  
 
 We save in Network Bandwidth.
 
