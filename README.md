@@ -35,12 +35,19 @@ https://developers.google.com/protocol-buffers/docs/javatutorial
 gRPC uses Protocol Buffers for communications.
 Measure the payload size vs JSON:
 
-JSON: 55 bytes                                     Same in Protocol Buffers: 20 bytes
-{                                                  message Person {
-    "age : 26,                                         int32 age = 1;
-    "first_name" : "Jean"                              string first_name = 2;   
-    "last_name" : "Cardoso"                            string last_name = 3;
-}                                                  }
+JSON: 55 bytes                                     
+{                                                  
+    "age : 26,                                         
+    "first_name" : "Jean"                                 
+    "last_name" : "Cardoso"                            
+}
+                                                  
+Same in Protocol Buffers: 20 bytes
+message Person {
+    int32 age = 1;
+    string first_name = 2;
+    string last_name = 3;
+}
 
 We save in Network Bandwidth.
 
