@@ -3,29 +3,27 @@
 https://grpc.io/  
 gRPC is a free and open-source framework developed by Google.  
 gRPC is part of the Cloud Native Computation Foundation (CNCF) - like Docker & Kubernetes for example.  
-
-At a high level, it allows you to define REQUEST and RESPONSE for RPC(Remote Procedure Calls) and handles all the rest for you.
-
+At a high level, it allows you to define REQUEST and RESPONSE for RPC(Remote Procedure Calls) and handles all the rest for you.  
 On top of it, it's modern, fast and efficient, build on top of HTTP/2, low latency, supports streamin, language independent, and makes
- is super easy to plug in authentication, load balacing, logging and monitoring.
+is super easy to plug in authentication, load balacing, logging and monitoring.
 
 
 ## What's an RPC?
-An RPC is a Remote Procedure Call.
-In your CLIENT code, it looks you're just calling a function directly on the SERVER.
-It's not a new concept(CORBA ha this before)
-With gRPC, it's implemented very cleanly and sloves a lot of problems.
-The rest of the gRPC code will be generated for you and you'll have to provide an implementation for it.
+An RPC is a Remote Procedure Call.  
+In your CLIENT code, it looks you're just calling a function directly on the SERVER.  
+It's not a new concept(CORBA ha this before).  
+With gRPC, it's implemented very cleanly and sloves a lot of problems.  
+The rest of the gRPC code will be generated for you and you'll have to provide an implementation for it.  
 One .proto file works for over 12 programming languages (server and client), and allows you to use a framework
 that scales to milions of RPC per seconds.
 
 
 ## Why Protocol Buffers?
-Protocol Buffers are language agnostic.
-Code can be generated for pretty much any language.
-Data is binary and efficiently serialized (small payloads).
-Very convenient for transporting a lot of data.
-Protocol Buffers allows for easy API evoluting using rules.
+Protocol Buffers are language agnostic.  
+Code can be generated for pretty much any language.  
+Data is binary and efficiently serialized (small payloads).  
+Very convenient for transporting a lot of data.  
+Protocol Buffers allows for easy API evoluting using rules.  
 Protocol Buffers is used to define the:
     Messages (data, Request and Response).
     Service (Service name and RPC endpoints)
