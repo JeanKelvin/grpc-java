@@ -1,8 +1,8 @@
 ## What's gRPC?
 
-https://grpc.io/
-gRPC is a free and open-source framework developed by Google.
-gRPC is part of the Cloud Native Computation Foundation (CNCF) - like Docker & Kubernetes for example.
+https://grpc.io/  
+gRPC is a free and open-source framework developed by Google.  
+gRPC is part of the Cloud Native Computation Foundation (CNCF) - like Docker & Kubernetes for example.  
 
 At a high level, it allows you to define REQUEST and RESPONSE for RPC(Remote Procedure Calls) and handles all the rest for you.
 
