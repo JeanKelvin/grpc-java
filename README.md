@@ -59,11 +59,11 @@ By using gRPC, the use of Protocol Buffers means faster and more efficient commu
 ## What's HTTP/2?
 gRPC leverages HTTP/2 as a backbone for communications.
 
-Demo: https://imagekit.io/demo/http2-vs-http1
+Demo: https://imagekit.io/demo/http2-vs-http1  
 https://medium.com/@factoryhr/http-2-the-difference-between-http-1-1-benefits-and-how-to-use-it-38094fa0e95b
 
 
 ## grPC vs REST
-https://husobee.github.io/golang/rest/grpc/2016/05/28/golang-rest-v-grpc.html
-https://www.slideshare.net/borisovalex/grpc-vs-rest-let-the-battle-begin-81800634
-https://docs.microsoft.com/en-us/aspnet/core/grpc/comparison?view=aspnetcore-3.0
+https://husobee.github.io/golang/rest/grpc/2016/05/28/golang-rest-v-grpc.html  
+https://www.slideshare.net/borisovalex/grpc-vs-rest-let-the-battle-begin-81800634  
+https://docs.microsoft.com/en-us/aspnet/core/grpc/comparison?view=aspnetcore-3.0  
