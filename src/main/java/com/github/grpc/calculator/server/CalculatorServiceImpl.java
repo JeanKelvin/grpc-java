@@ -9,7 +9,7 @@ public class CalculatorServiceImpl extends CalculatorServiceGrpc.CalculatorServi
     public void sum(SumRequest request, StreamObserver<SumResponse> responseObserver) {
 
         SumResponse sumResponse = SumResponse.newBuilder()
-                .setSumResult(request.getFirstNumber() + request.getSecondNumer())
+                .setSumResult(request.getFirstNumber() + request.getSecondNumber())
                 .build();
 
         responseObserver.onNext(sumResponse);
@@ -33,5 +33,42 @@ public class CalculatorServiceImpl extends CalculatorServiceGrpc.CalculatorServi
             }
         }
         responseObserver.onCompleted();
+    }
+
+    @Override
+    public StreamObserver<ComputeAverageRequest> computeAverage(StreamObserver<ComputeAverageResponse> responseObserver) {
+
+        StreamObserver<ComputeAverageRequest> requestObserver = new StreamObserver<ComputeAverageRequest>() {
+            // running sum and count
+            int sum = 0;
+            int count = 0;
+
+            @Override
+            public void onNext(ComputeAverageRequest value) {
+                // increment the sum
+                sum += value.getNumber();
+                // increment the count
+                count += 1;
+            }
+
+            @Override
+            public void onError(Throwable t) {
+
+            }
+
+            @Override
+            public void onCompleted() {
+                // compute average
+                double average = (double) sum / count;
+                responseObserver.onNext(
+                        ComputeAverageResponse.newBuilder()
+                                .setAverage(average)
+                                .build()
+                );
+                responseObserver.onCompleted();
+            }
+        };
+
+        return requestObserver;
     }
 }

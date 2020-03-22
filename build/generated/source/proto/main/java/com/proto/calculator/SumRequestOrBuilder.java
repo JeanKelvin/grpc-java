@@ -14,8 +14,8 @@ public interface SumRequestOrBuilder extends
   int getFirstNumber();
 
   /**
-   * <code>int32 second_numer = 2;</code>
-   * @return The secondNumer.
+   * <code>int32 second_number = 2;</code>
+   * @return The secondNumber.
    */
-  int getSecondNumer();
+  int getSecondNumber();
 }

@@ -55,7 +55,7 @@ private static final long serialVersionUID = 0L;
           }
           case 16: {
 
-            secondNumer_ = input.readInt32();
+            secondNumber_ = input.readInt32();
             break;
           }
           default: {
@@ -100,14 +100,14 @@ private static final long serialVersionUID = 0L;
     return firstNumber_;
   }
 
-  public static final int SECOND_NUMER_FIELD_NUMBER = 2;
-  private int secondNumer_;
+  public static final int SECOND_NUMBER_FIELD_NUMBER = 2;
+  private int secondNumber_;
   /**
-   * <code>int32 second_numer = 2;</code>
-   * @return The secondNumer.
+   * <code>int32 second_number = 2;</code>
+   * @return The secondNumber.
    */
-  public int getSecondNumer() {
-    return secondNumer_;
+  public int getSecondNumber() {
+    return secondNumber_;
   }
 
   private byte memoizedIsInitialized = -1;
@@ -127,8 +127,8 @@ private static final long serialVersionUID = 0L;
     if (firstNumber_ != 0) {
       output.writeInt32(1, firstNumber_);
     }
-    if (secondNumer_ != 0) {
-      output.writeInt32(2, secondNumer_);
+    if (secondNumber_ != 0) {
+      output.writeInt32(2, secondNumber_);
     }
     unknownFields.writeTo(output);
   }
@@ -143,9 +143,9 @@ private static final long serialVersionUID = 0L;
       size += com.google.protobuf.CodedOutputStream
         .computeInt32Size(1, firstNumber_);
     }
-    if (secondNumer_ != 0) {
+    if (secondNumber_ != 0) {
       size += com.google.protobuf.CodedOutputStream
-        .computeInt32Size(2, secondNumer_);
+        .computeInt32Size(2, secondNumber_);
     }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
@@ -164,8 +164,8 @@ private static final long serialVersionUID = 0L;
 
     if (getFirstNumber()
         != other.getFirstNumber()) return false;
-    if (getSecondNumer()
-        != other.getSecondNumer()) return false;
+    if (getSecondNumber()
+        != other.getSecondNumber()) return false;
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
   }
@@ -179,8 +179,8 @@ private static final long serialVersionUID = 0L;
     hash = (19 * hash) + getDescriptor().hashCode();
     hash = (37 * hash) + FIRST_NUMBER_FIELD_NUMBER;
     hash = (53 * hash) + getFirstNumber();
-    hash = (37 * hash) + SECOND_NUMER_FIELD_NUMBER;
-    hash = (53 * hash) + getSecondNumer();
+    hash = (37 * hash) + SECOND_NUMBER_FIELD_NUMBER;
+    hash = (53 * hash) + getSecondNumber();
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
     return hash;
@@ -316,7 +316,7 @@ private static final long serialVersionUID = 0L;
       super.clear();
       firstNumber_ = 0;
 
-      secondNumer_ = 0;
+      secondNumber_ = 0;
 
       return this;
     }
@@ -345,7 +345,7 @@ private static final long serialVersionUID = 0L;
     public com.proto.calculator.SumRequest buildPartial() {
       com.proto.calculator.SumRequest result = new com.proto.calculator.SumRequest(this);
       result.firstNumber_ = firstNumber_;
-      result.secondNumer_ = secondNumer_;
+      result.secondNumber_ = secondNumber_;
       onBuilt();
       return result;
     }
@@ -397,8 +397,8 @@ private static final long serialVersionUID = 0L;
       if (other.getFirstNumber() != 0) {
         setFirstNumber(other.getFirstNumber());
       }
-      if (other.getSecondNumer() != 0) {
-        setSecondNumer(other.getSecondNumer());
+      if (other.getSecondNumber() != 0) {
+        setSecondNumber(other.getSecondNumber());
       }
       this.mergeUnknownFields(other.unknownFields);
       onChanged();
@@ -459,32 +459,32 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private int secondNumer_ ;
+    private int secondNumber_ ;
     /**
-     * <code>int32 second_numer = 2;</code>
-     * @return The secondNumer.
+     * <code>int32 second_number = 2;</code>
+     * @return The secondNumber.
      */
-    public int getSecondNumer() {
-      return secondNumer_;
+    public int getSecondNumber() {
+      return secondNumber_;
     }
     /**
-     * <code>int32 second_numer = 2;</code>
-     * @param value The secondNumer to set.
+     * <code>int32 second_number = 2;</code>
+     * @param value The secondNumber to set.
      * @return This builder for chaining.
      */
-    public Builder setSecondNumer(int value) {
+    public Builder setSecondNumber(int value) {
       
-      secondNumer_ = value;
+      secondNumber_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>int32 second_numer = 2;</code>
+     * <code>int32 second_number = 2;</code>
      * @return This builder for chaining.
      */
-    public Builder clearSecondNumer() {
+    public Builder clearSecondNumber() {
       
-      secondNumer_ = 0;
+      secondNumber_ = 0;
       onChanged();
       return this;
     }

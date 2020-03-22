@@ -2,7 +2,6 @@ package com.github.grpc.calculator.server;
 
 import io.grpc.Server;
 import io.grpc.ServerBuilder;
-
 import java.io.IOException;
 
 public class CalculatorServer {
@@ -14,7 +13,7 @@ public class CalculatorServer {
 
         server.start();
 
-        Runtime.getRuntime().addShutdownHook(new Thread( () -> {
+        Runtime.getRuntime().addShutdownHook(new Thread(() -> {
             System.out.println("Received Shutdown Request");
             server.shutdown();
             System.out.println("Successfully stopped the server");
