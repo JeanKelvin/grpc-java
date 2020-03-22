@@ -18,8 +18,31 @@ message GreetResponse {
     string result = 1;
 }
 
+message GreetManyTimesRequest {
+    Greeting greeting = 1;
+}
+
+message GreetManyTimesResponse {
+    string result = 1;
+}
+
+message LongGreetRequest {
+    Greeting greeting = 1;
+}
+
+message LongGreetResponse {
+    string result = 1;
+
+}
+
 service GreetService {
     // Unaryn
     rpc Greet(GreetRequest) returns (GreetResponse) {};
+
+    // Server Streaming
+    rpc GreetManyTimes(GreetManyTimesRequest) returns (stream GreetManyTimesResponse) {};
+
+    // Cliente Streaming
+    rpc LongGreet(stream LongGreetRequest) returns (LongGreetResponse) {};
 }
 

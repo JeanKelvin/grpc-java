@@ -67,3 +67,17 @@ https://medium.com/@factoryhr/http-2-the-difference-between-http-1-1-benefits-an
 https://husobee.github.io/golang/rest/grpc/2016/05/28/golang-rest-v-grpc.html  
 https://www.slideshare.net/borisovalex/grpc-vs-rest-let-the-battle-begin-81800634  
 https://docs.microsoft.com/en-us/aspnet/core/grpc/comparison?view=aspnetcore-3.0  
+
+
+# What's a Server Streaming API?
+Server Streaming RPC API are a NEW kind API enable thanks to HTTP/2.    
+The client will send one message to the server and will receive many responses from the server, possibly an infinite number.  
+
+# What's a Client Streaming API?
+Client Streaming RPC API are a NEW kind API enable thanks to HTTP/2.  
+The client will send many message to the server and will receive one response from the server (at any time).  
+
+
+
+
+
